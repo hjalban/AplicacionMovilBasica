@@ -7,6 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+
+import java.util.TimerTask;
+import java.util.Timer;
+
 public class MainActivity extends AppCompatActivity {
     private EditText txtNombre, txtApellido, txtUsuario, txtPasswd;
     private Button btnLogin, btnRegistro;
@@ -19,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         txtPasswd = (EditText) findViewById(R.id.txtPasswd);
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnRegistro = (Button) findViewById(R.id.btnRegistro);
+
     }
     public void registrarse(View view) {
         Intent intent = new Intent(this, formulario_registro.class);
@@ -34,4 +40,5 @@ public class MainActivity extends AppCompatActivity {
         }else if(v.getId() == R.id.btnRegistro) {
         }
     }
+
 }
